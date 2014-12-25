@@ -36,6 +36,7 @@
 		DE118D561A45700700EADDCD /* engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
 		DE118D571A45700700EADDCD /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
 		DE118D591A45712E00EADDCD /* circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = circle.h; sourceTree = "<group>"; };
+		DED8D6101A4BD1F800487E3E /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		DEFBC06D1A46842A00468546 /* shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shape.cpp; sourceTree = "<group>"; };
 		DEFBC06E1A46842A00468546 /* shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shape.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +71,10 @@
 		DE118D451A456C1E00EADDCD /* 2DPhysicsEngine */ = {
 			isa = PBXGroup;
 			children = (
+				DED8D6121A4BD50F00487E3E /* rigidBodyPhysics */,
+				DED8D6111A4BD4FE00487E3E /* aggregateMassPhysics */,
+				DED8D6101A4BD1F800487E3E /* config.h */,
+				DED8D60F1A4BD1B900487E3E /* particlePhysicsEngine */,
 				DE118D461A456C1E00EADDCD /* main.cpp */,
 				DE118D501A456D4700EADDCD /* aabb.cpp */,
 				DE118D511A456D4700EADDCD /* aabb.h */,
@@ -82,6 +87,27 @@
 				DEFBC06E1A46842A00468546 /* shape.h */,
 			);
 			path = 2DPhysicsEngine;
+			sourceTree = "<group>";
+		};
+		DED8D60F1A4BD1B900487E3E /* particlePhysicsEngine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = particlePhysicsEngine;
+			sourceTree = "<group>";
+		};
+		DED8D6111A4BD4FE00487E3E /* aggregateMassPhysics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = aggregateMassPhysics;
+			sourceTree = "<group>";
+		};
+		DED8D6121A4BD50F00487E3E /* rigidBodyPhysics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = rigidBodyPhysics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
