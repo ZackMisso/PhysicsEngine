@@ -155,6 +155,14 @@ Vector3D Vector3D::invertRet(){
     return temp;
 }
 
+Vector3D Vector3D::crossProduct(Vector3D other){
+    Vector3D temp;
+    temp.setX(ypos*other.getZ() - zpos*other.getY());
+    temp.setY(zpos*other.getX() - xpos*other.getZ());
+    temp.setZ(xpos*other.getY() - ypos*other.getX());
+    return temp;
+}
+
 void Vector3D::operator+=(Vector3D other){
     xpos+=other.getX();
     ypos+=other.getY();

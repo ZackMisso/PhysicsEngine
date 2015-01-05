@@ -48,6 +48,7 @@ public:
     Vector3D operator - (Vector3D);
     Vector3D operator * (float);
     Vector3D invertRet();
+    Vector3D crossProduct(Vector3D other);
     void operator += (Vector3D);
     void operator -= (Vector3D);
     void operator *= (float);

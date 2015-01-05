@@ -11,6 +11,9 @@
 		DE118D521A456D4700EADDCD /* aabb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE118D501A456D4700EADDCD /* aabb.cpp */; };
 		DE118D551A456DB000EADDCD /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE118D531A456DB000EADDCD /* vector.cpp */; };
 		DE118D581A45700700EADDCD /* engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE118D561A45700700EADDCD /* engine.cpp */; };
+		DE6355731A59E79A000769D1 /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6355711A59E79A000769D1 /* particle.cpp */; };
+		DE6355761A5A4A26000769D1 /* timing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6355741A5A4A26000769D1 /* timing.cpp */; };
+		DE6355791A5A4E04000769D1 /* renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6355771A5A4E04000769D1 /* renderer.cpp */; };
 		DEFBC06F1A46842A00468546 /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEFBC06D1A46842A00468546 /* shape.cpp */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,12 @@
 		DE118D561A45700700EADDCD /* engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
 		DE118D571A45700700EADDCD /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
 		DE118D591A45712E00EADDCD /* circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = circle.h; sourceTree = "<group>"; };
+		DE6355711A59E79A000769D1 /* particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = particle.cpp; sourceTree = "<group>"; };
+		DE6355721A59E79A000769D1 /* particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = particle.h; sourceTree = "<group>"; };
+		DE6355741A5A4A26000769D1 /* timing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timing.cpp; sourceTree = "<group>"; };
+		DE6355751A5A4A26000769D1 /* timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timing.h; sourceTree = "<group>"; };
+		DE6355771A5A4E04000769D1 /* renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = renderer.cpp; sourceTree = "<group>"; };
+		DE6355781A5A4E04000769D1 /* renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = renderer.h; sourceTree = "<group>"; };
 		DED8D6101A4BD1F800487E3E /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		DEFBC06D1A46842A00468546 /* shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shape.cpp; sourceTree = "<group>"; };
 		DEFBC06E1A46842A00468546 /* shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shape.h; sourceTree = "<group>"; };
@@ -71,6 +80,8 @@
 		DE118D451A456C1E00EADDCD /* 2DPhysicsEngine */ = {
 			isa = PBXGroup;
 			children = (
+				DE6355711A59E79A000769D1 /* particle.cpp */,
+				DE6355721A59E79A000769D1 /* particle.h */,
 				DED8D6121A4BD50F00487E3E /* rigidBodyPhysics */,
 				DED8D6111A4BD4FE00487E3E /* aggregateMassPhysics */,
 				DED8D6101A4BD1F800487E3E /* config.h */,
@@ -85,6 +96,10 @@
 				DE118D591A45712E00EADDCD /* circle.h */,
 				DEFBC06D1A46842A00468546 /* shape.cpp */,
 				DEFBC06E1A46842A00468546 /* shape.h */,
+				DE6355741A5A4A26000769D1 /* timing.cpp */,
+				DE6355751A5A4A26000769D1 /* timing.h */,
+				DE6355771A5A4E04000769D1 /* renderer.cpp */,
+				DE6355781A5A4E04000769D1 /* renderer.h */,
 			);
 			path = 2DPhysicsEngine;
 			sourceTree = "<group>";
@@ -170,7 +185,10 @@
 				DE118D471A456C1E00EADDCD /* main.cpp in Sources */,
 				DE118D581A45700700EADDCD /* engine.cpp in Sources */,
 				DE118D521A456D4700EADDCD /* aabb.cpp in Sources */,
+				DE6355791A5A4E04000769D1 /* renderer.cpp in Sources */,
 				DE118D551A456DB000EADDCD /* vector.cpp in Sources */,
+				DE6355761A5A4A26000769D1 /* timing.cpp in Sources */,
+				DE6355731A59E79A000769D1 /* particle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
