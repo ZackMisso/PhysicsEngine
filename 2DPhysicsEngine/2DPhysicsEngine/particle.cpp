@@ -29,6 +29,8 @@ void Particle2D::update(float time){
 }
 
 void Particle2D::integrate(float duration){
+    /* commenting out to test
+    
     // update position
     position += velocity * duration;
     // get acceleration from the forces
@@ -38,6 +40,8 @@ void Particle2D::integrate(float duration){
     velocity += resultingAcc * duration;
     // impose drag
     velocity *= powf(damping,duration); // very expensive... need to change
+     
+    */
 }
 
 void Particle3D::update(float time){

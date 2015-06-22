@@ -17,4 +17,18 @@ public:
     static void update();
 };
 
+class StopWatch{
+private:
+    long totalTime;
+    long lastTimeStep;
+    bool running;
+public:
+    StopWatch();
+    void start();
+    void stop();
+    void reset();
+    // getter method
+    long getTotalTime();
+};
+
 #endif /* defined(___DPhysicsEngine__timing__) */

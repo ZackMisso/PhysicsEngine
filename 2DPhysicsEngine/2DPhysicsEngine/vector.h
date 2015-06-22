@@ -65,6 +65,4 @@ public:
     void setZ(float z);
 };
 
-// possibly implement more types of vectors
-
 #endif /* defined(___DPhysicsEngine__vector__) */

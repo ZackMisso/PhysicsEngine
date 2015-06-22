@@ -11,6 +11,16 @@
 		DE118D521A456D4700EADDCD /* aabb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE118D501A456D4700EADDCD /* aabb.cpp */; };
 		DE118D551A456DB000EADDCD /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE118D531A456DB000EADDCD /* vector.cpp */; };
 		DE118D581A45700700EADDCD /* engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE118D561A45700700EADDCD /* engine.cpp */; };
+		DE48D9AC1A5C5B820078FA90 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE48D9AB1A5C5B820078FA90 /* OpenGL.framework */; };
+		DE48D9B01A5DCE720078FA90 /* baseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE48D9AE1A5DCE720078FA90 /* baseTest.cpp */; };
+		DE55DE2D1B37774200FE5A46 /* pinMatrixTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE55DE2B1B37774200FE5A46 /* pinMatrixTest.cpp */; };
+		DE55DE321B3782EA00FE5A46 /* projectSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE55DE301B3782EA00FE5A46 /* projectSettings.cpp */; };
+		DE55DE361B37837200FE5A46 /* timeIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE55DE341B37837200FE5A46 /* timeIO.cpp */; };
+		DE55DE3A1B37883700FE5A46 /* collisionDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE55DE381B37883700FE5A46 /* collisionDetector.cpp */; };
+		DE55DE3D1B37886200FE5A46 /* collisionResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE55DE3C1B37886200FE5A46 /* collisionResolver.cpp */; };
+		DE55DE3F1B379A7700FE5A46 /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE55DE3E1B379A7700FE5A46 /* libglfw3.3.1.dylib */; };
+		DE55DE421B37A42700FE5A46 /* cannonTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE55DE401B37A42700FE5A46 /* cannonTest.cpp */; };
+		DE55DE451B37A46000FE5A46 /* tetrisTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE55DE431B37A46000FE5A46 /* tetrisTest.cpp */; };
 		DE6355731A59E79A000769D1 /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6355711A59E79A000769D1 /* particle.cpp */; };
 		DE6355761A5A4A26000769D1 /* timing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6355741A5A4A26000769D1 /* timing.cpp */; };
 		DE6355791A5A4E04000769D1 /* renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6355771A5A4E04000769D1 /* renderer.cpp */; };
@@ -39,6 +49,24 @@
 		DE118D561A45700700EADDCD /* engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
 		DE118D571A45700700EADDCD /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
 		DE118D591A45712E00EADDCD /* circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = circle.h; sourceTree = "<group>"; };
+		DE48D9AB1A5C5B820078FA90 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		DE48D9AE1A5DCE720078FA90 /* baseTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseTest.cpp; sourceTree = "<group>"; };
+		DE48D9AF1A5DCE720078FA90 /* baseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseTest.h; sourceTree = "<group>"; };
+		DE55DE2B1B37774200FE5A46 /* pinMatrixTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pinMatrixTest.cpp; sourceTree = "<group>"; };
+		DE55DE2C1B37774200FE5A46 /* pinMatrixTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinMatrixTest.h; sourceTree = "<group>"; };
+		DE55DE301B3782EA00FE5A46 /* projectSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = projectSettings.cpp; sourceTree = "<group>"; };
+		DE55DE311B3782EA00FE5A46 /* projectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = projectSettings.h; sourceTree = "<group>"; };
+		DE55DE341B37837200FE5A46 /* timeIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeIO.cpp; sourceTree = "<group>"; };
+		DE55DE351B37837200FE5A46 /* timeIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeIO.h; sourceTree = "<group>"; };
+		DE55DE381B37883700FE5A46 /* collisionDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = collisionDetector.cpp; sourceTree = "<group>"; };
+		DE55DE391B37883700FE5A46 /* collisionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collisionDetector.h; sourceTree = "<group>"; };
+		DE55DE3B1B37884E00FE5A46 /* collisionResolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = collisionResolver.h; sourceTree = "<group>"; };
+		DE55DE3C1B37886200FE5A46 /* collisionResolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = collisionResolver.cpp; sourceTree = "<group>"; };
+		DE55DE3E1B379A7700FE5A46 /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../../../../usr/local/Cellar/glfw3/3.1/lib/libglfw3.3.1.dylib; sourceTree = "<group>"; };
+		DE55DE401B37A42700FE5A46 /* cannonTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cannonTest.cpp; sourceTree = "<group>"; };
+		DE55DE411B37A42700FE5A46 /* cannonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cannonTest.h; sourceTree = "<group>"; };
+		DE55DE431B37A46000FE5A46 /* tetrisTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tetrisTest.cpp; sourceTree = "<group>"; };
+		DE55DE441B37A46000FE5A46 /* tetrisTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tetrisTest.h; sourceTree = "<group>"; };
 		DE6355711A59E79A000769D1 /* particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = particle.cpp; sourceTree = "<group>"; };
 		DE6355721A59E79A000769D1 /* particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = particle.h; sourceTree = "<group>"; };
 		DE6355741A5A4A26000769D1 /* timing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timing.cpp; sourceTree = "<group>"; };
@@ -55,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE55DE3F1B379A7700FE5A46 /* libglfw3.3.1.dylib in Frameworks */,
+				DE48D9AC1A5C5B820078FA90 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +94,8 @@
 		DE118D3A1A456C1E00EADDCD = {
 			isa = PBXGroup;
 			children = (
+				DE55DE3E1B379A7700FE5A46 /* libglfw3.3.1.dylib */,
+				DE48D9AB1A5C5B820078FA90 /* OpenGL.framework */,
 				DE118D451A456C1E00EADDCD /* 2DPhysicsEngine */,
 				DE118D441A456C1E00EADDCD /* Products */,
 			);
@@ -80,28 +112,92 @@
 		DE118D451A456C1E00EADDCD /* 2DPhysicsEngine */ = {
 			isa = PBXGroup;
 			children = (
-				DE6355711A59E79A000769D1 /* particle.cpp */,
-				DE6355721A59E79A000769D1 /* particle.h */,
+				DE55DE371B3787F600FE5A46 /* collisions */,
+				DE55DE331B37835E00FE5A46 /* io */,
+				DE55DE2F1B37784000FE5A46 /* dataStructures */,
+				DE55DE2E1B3777F600FE5A46 /* core */,
+				DE55DE2A1B3776BE00FE5A46 /* shapes */,
+				DE48D9AD1A5DCE5E0078FA90 /* engineTests */,
 				DED8D6121A4BD50F00487E3E /* rigidBodyPhysics */,
 				DED8D6111A4BD4FE00487E3E /* aggregateMassPhysics */,
 				DED8D6101A4BD1F800487E3E /* config.h */,
 				DED8D60F1A4BD1B900487E3E /* particlePhysicsEngine */,
-				DE118D461A456C1E00EADDCD /* main.cpp */,
-				DE118D501A456D4700EADDCD /* aabb.cpp */,
-				DE118D511A456D4700EADDCD /* aabb.h */,
-				DE118D531A456DB000EADDCD /* vector.cpp */,
-				DE118D541A456DB000EADDCD /* vector.h */,
-				DE118D561A45700700EADDCD /* engine.cpp */,
-				DE118D571A45700700EADDCD /* engine.h */,
-				DE118D591A45712E00EADDCD /* circle.h */,
-				DEFBC06D1A46842A00468546 /* shape.cpp */,
-				DEFBC06E1A46842A00468546 /* shape.h */,
-				DE6355741A5A4A26000769D1 /* timing.cpp */,
-				DE6355751A5A4A26000769D1 /* timing.h */,
-				DE6355771A5A4E04000769D1 /* renderer.cpp */,
-				DE6355781A5A4E04000769D1 /* renderer.h */,
 			);
 			path = 2DPhysicsEngine;
+			sourceTree = "<group>";
+		};
+		DE48D9AD1A5DCE5E0078FA90 /* engineTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE48D9AE1A5DCE720078FA90 /* baseTest.cpp */,
+				DE48D9AF1A5DCE720078FA90 /* baseTest.h */,
+				DE55DE2B1B37774200FE5A46 /* pinMatrixTest.cpp */,
+				DE55DE2C1B37774200FE5A46 /* pinMatrixTest.h */,
+				DE55DE401B37A42700FE5A46 /* cannonTest.cpp */,
+				DE55DE411B37A42700FE5A46 /* cannonTest.h */,
+				DE55DE431B37A46000FE5A46 /* tetrisTest.cpp */,
+				DE55DE441B37A46000FE5A46 /* tetrisTest.h */,
+			);
+			name = engineTests;
+			sourceTree = "<group>";
+		};
+		DE55DE2A1B3776BE00FE5A46 /* shapes */ = {
+			isa = PBXGroup;
+			children = (
+				DE118D511A456D4700EADDCD /* aabb.h */,
+				DE118D501A456D4700EADDCD /* aabb.cpp */,
+				DEFBC06E1A46842A00468546 /* shape.h */,
+				DEFBC06D1A46842A00468546 /* shape.cpp */,
+				DE118D591A45712E00EADDCD /* circle.h */,
+			);
+			name = shapes;
+			sourceTree = "<group>";
+		};
+		DE55DE2E1B3777F600FE5A46 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				DE6355751A5A4A26000769D1 /* timing.h */,
+				DE6355741A5A4A26000769D1 /* timing.cpp */,
+				DE6355771A5A4E04000769D1 /* renderer.cpp */,
+				DE6355781A5A4E04000769D1 /* renderer.h */,
+				DE118D561A45700700EADDCD /* engine.cpp */,
+				DE118D571A45700700EADDCD /* engine.h */,
+				DE118D461A456C1E00EADDCD /* main.cpp */,
+				DE55DE301B3782EA00FE5A46 /* projectSettings.cpp */,
+				DE55DE311B3782EA00FE5A46 /* projectSettings.h */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		DE55DE2F1B37784000FE5A46 /* dataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				DE118D531A456DB000EADDCD /* vector.cpp */,
+				DE118D541A456DB000EADDCD /* vector.h */,
+				DE6355721A59E79A000769D1 /* particle.h */,
+				DE6355711A59E79A000769D1 /* particle.cpp */,
+			);
+			name = dataStructures;
+			sourceTree = "<group>";
+		};
+		DE55DE331B37835E00FE5A46 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				DE55DE341B37837200FE5A46 /* timeIO.cpp */,
+				DE55DE351B37837200FE5A46 /* timeIO.h */,
+			);
+			name = io;
+			sourceTree = "<group>";
+		};
+		DE55DE371B3787F600FE5A46 /* collisions */ = {
+			isa = PBXGroup;
+			children = (
+				DE55DE381B37883700FE5A46 /* collisionDetector.cpp */,
+				DE55DE391B37883700FE5A46 /* collisionDetector.h */,
+				DE55DE3B1B37884E00FE5A46 /* collisionResolver.h */,
+				DE55DE3C1B37886200FE5A46 /* collisionResolver.cpp */,
+			);
+			name = collisions;
 			sourceTree = "<group>";
 		};
 		DED8D60F1A4BD1B900487E3E /* particlePhysicsEngine */ = {
@@ -181,14 +277,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE55DE3D1B37886200FE5A46 /* collisionResolver.cpp in Sources */,
 				DEFBC06F1A46842A00468546 /* shape.cpp in Sources */,
+				DE55DE3A1B37883700FE5A46 /* collisionDetector.cpp in Sources */,
 				DE118D471A456C1E00EADDCD /* main.cpp in Sources */,
 				DE118D581A45700700EADDCD /* engine.cpp in Sources */,
 				DE118D521A456D4700EADDCD /* aabb.cpp in Sources */,
 				DE6355791A5A4E04000769D1 /* renderer.cpp in Sources */,
 				DE118D551A456DB000EADDCD /* vector.cpp in Sources */,
+				DE55DE361B37837200FE5A46 /* timeIO.cpp in Sources */,
+				DE55DE2D1B37774200FE5A46 /* pinMatrixTest.cpp in Sources */,
+				DE55DE451B37A46000FE5A46 /* tetrisTest.cpp in Sources */,
+				DE55DE421B37A42700FE5A46 /* cannonTest.cpp in Sources */,
 				DE6355761A5A4A26000769D1 /* timing.cpp in Sources */,
+				DE48D9B01A5DCE720078FA90 /* baseTest.cpp in Sources */,
 				DE6355731A59E79A000769D1 /* particle.cpp in Sources */,
+				DE55DE321B3782EA00FE5A46 /* projectSettings.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +376,19 @@
 		DE118D4B1A456C1E00EADDCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"/opt/X11/include\"",
+					"\"/usr/local/include\"",
+					"\"/usr/local/Cellar/glfw3/3.1/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"/opt/X11/lib\"",
+					"\"/usr/local/lib\"",
+					"\"/usr/local/Cellar/glfw3/3.1/lib\"",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "-lGLUT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -279,6 +396,18 @@
 		DE118D4C1A456C1E00EADDCD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"/opt/X11/include\"",
+					"\"/usr/local/include\"",
+					"\"/usr/local/Cellar/glfw3/3.1/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"/opt/X11/lib\"",
+					"\"/usr/local/lib\"",
+					"\"/usr/local/Cellar/glfw3/3.1/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

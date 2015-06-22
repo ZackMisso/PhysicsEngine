@@ -11,3 +11,22 @@
 void TimingData::update(){
     // set the previous timestamp
 }
+
+StopWatch::StopWatch(){
+    totalTime = 0;
+    lastTimeStep = 0;
+}
+
+void StopWatch::start(){
+    // to be implemented
+}
+
+void StopWatch::stop(){
+    // to be implemented
+}
+
+void StopWatch::reset(){
+    // to be implemented
+}
+
+long StopWatch::getTotalTime() { return totalTime; }

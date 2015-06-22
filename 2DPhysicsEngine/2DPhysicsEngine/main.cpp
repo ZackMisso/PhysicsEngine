@@ -7,10 +7,10 @@
 //
 
 #include <iostream>
+#include "baseTest.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
+int main(int argc,char **argv) {
     std::cout << "Hello, World!\n";
-    
+    BaseTest(argc,argv);
     return 0;
 }

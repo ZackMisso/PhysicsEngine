@@ -6,62 +6,52 @@
 //  Copyright (c) 2015 Zackary T Misso. All rights reserved.
 //
 
+#include <GLFW/glfw3.h>
 #include "renderer.h"
 
-void RenderingEngine::createWindow(){
-    // implement
+RenderingEngine2D::~RenderingEngine2D(){
+    glfwDestroyWindow(window);
 }
 
-void RenderingEngine::render2DParticle(Particle2D particle){
-    // implement
+void RenderingEngine2D::init(ProjectSettings *settings){
+    glfwInit();
+    window = glfwCreateWindow(settings->getWindowWidth(), settings->getWindowHeight(), "Physics Engine", NULL, NULL);
+    glfwMakeContextCurrent(window);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glOrtho(0.0, settings->getWindowWidth(), settings->getWindowHeight(), 0.0, -1.0, 1.0);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    glClearColor(0.0,0.0,0.0,0.0);
+    glColor3f(1.0,1.0,1.0);
+    //glBegin(GL_LINES);
+    //glVertex3f(.25,.25,.0);
+    //glVertex3f(.75,.75,.0);
+    //glEnd();
+    //glFlush();
 }
 
-void RenderingEngine::render3DParticle(Particle3D particle){
-    // implement
+void RenderingEngine2D::beginRenderingFrame(){
+    // to be implemented maybe
 }
 
-void RenderingEngine::renderCircle(Circle circle){
-    // implement
-}
-
-void RenderingEngine::init(){
-    glGenVertexArrays(NumVAOs,VAOs);
-    glBindVertexArray(VAOs[Triangles]);
-    
-    GLfloat vertices[NumVertices][2] = {
-        { -.9, -.9 }, // triangle 1
-        { .85, -.9 },
-        { -.9, .85 },
-        { .9, .85 }, // triangle 2
-        { .9, .9 },
-        { -.85, .9 }
-    };
-    
-    glGenBuffers(NumBuffers,Buffers);
-    glBindBuffer(GL_ARRAY_BUFFER,Buffers[ArrayBuffer]);
-    glBufferData(GL_ARRAY_BUFFER,sizeof(vertices),vertices,GL_STATIC_DRAW);
-    ShaderInfo shaders[] = {
-        { GL_VERTEX_SHADER,"triangles.vert" },
-        { GL_FRAGMENT_SHADER,"triangles.frag" },
-        { GL_NONE,0x0 }
-    };
-    
-    GLuint program = LoadShaders(shaders);
-    glUseProgram(program);
-    glVertexAttribPointer(vPosition,2,GL_FLOAT,GL_FALSE,0,0x0);
-    //glVer
-    glEnableVertexAttribArray(vPosition);
-}
-
-void RenderingEngine::display(){
-    glClear(GL_COLOR_BUFFER_BIT);
-    glBindVertexArray(VAOs[Triangles]);
-    glDrawArrays(GL_TRIANGLES,0,NumVertices);
+void RenderingEngine2D::finishRenderingFrame(){
     glFlush();
+    glfwSwapBuffers(window); // calls pollEvents
 }
 
-void RenderingEngine::test(int argc,char** argv){
-    glutInit(&argc,argv);
-    glutInitDisplayMode(GLUT_RGBA);
-    glutInitWindowSize(512,512);
+void RenderingEngine2D::render2DParticle(Particle2D particle){
+    // to be implemented
+}
+
+void RenderingEngine2D::renderCircle(Circle circle){
+    // to be implemented
+}
+
+void RenderingEngine2D::renderAABB(AABB aabb){
+    // to be implemented
+}
+
+void RenderingEngine2D::renderTest(){
+    // simple unit test
 }

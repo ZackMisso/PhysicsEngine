@@ -9,40 +9,27 @@
 #ifndef ___DPhysicsEngine__renderer__
 #define ___DPhysicsEngine__renderer__
 
-#ifdef __APPLE__
-#define glGenVertexArrays glGenVertexArraysAPPLE
-#define glBindVertexArray glBindVertexArrayAPPLE
-#define glBindVertexArrays glBindVertexArraysAPPLE
-#define glDeleteVertexArrays glDeleteVertexArraysAPPLE
-#define BUFFER_OFFSET(offset) ((GLvoid*)(offset));
-#endif
-
-#include <stdio.h>
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
-#include <GLUT/glut.h>
-#include <OpenGL/gliContext.h>
-#include <OpenGL/OpenGL.h>
 #include "particle.h"
 #include "aabb.h"
 #include "circle.h"
+#include "projectSettings.h"
 
-class RenderingEngine{
-    // Figure out how to use this
-    enum VAO_IDs { Triangles, NumVAOs }; // learn
-    enum Buffer_IDs { ArrayBuffer, NumBuffers }; // learn
-    enum Attrib_IDs { vPosition = 0 }; // learn
-    static GLuint VAOs[NumVAOs];
-    static GLuint Buffers[NumBuffers];
-    static const GLuint NumVertices = 6;
-    static void createWindow();
-    static void render2DParticle(Particle2D particle);
-    static void render3DParticle(Particle3D particle);
-    static void renderAABB(AABB aabb);
-    static void renderCircle(Circle circle);
-    static void init();
-    static void display();
-    static void test(int argc,char** argv);
+class RenderingEngine2D{
+private:
+    GLFWwindow *window;
+public:
+    ~RenderingEngine2D();
+    void init(ProjectSettings *settings);
+    void beginRenderingFrame();
+    void finishRenderingFrame();
+    void render2DParticle(Particle2D particle);
+    void renderAABB(AABB aabb);
+    void renderCircle(Circle circle);
+    void renderTest();
+};
+
+class RenderingEngine3D{
+    // to be implemented
 };
 
 #endif /* defined(___DPhysicsEngine__renderer__) */

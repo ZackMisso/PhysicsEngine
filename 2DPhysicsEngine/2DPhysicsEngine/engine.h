@@ -9,17 +9,19 @@
 #ifndef ___DPhysicsEngine__engine__
 #define ___DPhysicsEngine__engine__
 
-#include <stdio.h>
-#include "aabb.h"
-#include "circle.h"
-#include "shape.h"
+#include "collisionDetector.h"
+#include "collisionResolver.h"
 
-class CollisionDetector{
+class PhysicsEngine2D{
+private:
+    CollisionDetector *detector;
+    CollisionResolver *resolver;
+    // maybe add culling as its own engine
 public:
-    bool AABBvsAABB(AABB a,AABB b);
-    bool CirclevsCircle(Circle a,Circle b);
-    void simpleResolveCollision(Shape* a,Shape* b);
-    void positionalCorrection(Shape *a,Shape *b);
+    PhysicsEngine2D();
+    // setter methods
+    void setDetector(CollisionDetector* param);
+    void setResolver(CollisionResolver* param);
 };
 
-#endif /* defined(___DPhysicsEngine__engine__) */
+#endif
