@@ -11,6 +11,11 @@
 		DE118D521A456D4700EADDCD /* aabb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE118D501A456D4700EADDCD /* aabb.cpp */; };
 		DE118D551A456DB000EADDCD /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE118D531A456DB000EADDCD /* vector.cpp */; };
 		DE118D581A45700700EADDCD /* engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE118D561A45700700EADDCD /* engine.cpp */; };
+		DE27DFDE1B40FF5900DB9ED4 /* circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE27DFDD1B40FF5900DB9ED4 /* circle.cpp */; };
+		DE27DFE11B4102FE00DB9ED4 /* BodyData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE27DFDF1B4102FE00DB9ED4 /* BodyData.cpp */; };
+		DE27DFE41B4106CB00DB9ED4 /* sizeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE27DFE21B4106CB00DB9ED4 /* sizeData.cpp */; };
+		DE27DFE71B4108AD00DB9ED4 /* physicsObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE27DFE51B4108AD00DB9ED4 /* physicsObject.cpp */; };
+		DE27DFEA1B4109ED00DB9ED4 /* manifold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE27DFE81B4109ED00DB9ED4 /* manifold.cpp */; };
 		DE48D9AC1A5C5B820078FA90 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE48D9AB1A5C5B820078FA90 /* OpenGL.framework */; };
 		DE48D9B01A5DCE720078FA90 /* baseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE48D9AE1A5DCE720078FA90 /* baseTest.cpp */; };
 		DE55DE2D1B37774200FE5A46 /* pinMatrixTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE55DE2B1B37774200FE5A46 /* pinMatrixTest.cpp */; };
@@ -49,6 +54,15 @@
 		DE118D561A45700700EADDCD /* engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
 		DE118D571A45700700EADDCD /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
 		DE118D591A45712E00EADDCD /* circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = circle.h; sourceTree = "<group>"; };
+		DE27DFDD1B40FF5900DB9ED4 /* circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = circle.cpp; sourceTree = "<group>"; };
+		DE27DFDF1B4102FE00DB9ED4 /* BodyData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BodyData.cpp; sourceTree = "<group>"; };
+		DE27DFE01B4102FE00DB9ED4 /* BodyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyData.h; sourceTree = "<group>"; };
+		DE27DFE21B4106CB00DB9ED4 /* sizeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sizeData.cpp; sourceTree = "<group>"; };
+		DE27DFE31B4106CB00DB9ED4 /* sizeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sizeData.h; sourceTree = "<group>"; };
+		DE27DFE51B4108AD00DB9ED4 /* physicsObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = physicsObject.cpp; sourceTree = "<group>"; };
+		DE27DFE61B4108AD00DB9ED4 /* physicsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = physicsObject.h; sourceTree = "<group>"; };
+		DE27DFE81B4109ED00DB9ED4 /* manifold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = manifold.cpp; sourceTree = "<group>"; };
+		DE27DFE91B4109ED00DB9ED4 /* manifold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = manifold.h; sourceTree = "<group>"; };
 		DE48D9AB1A5C5B820078FA90 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		DE48D9AE1A5DCE720078FA90 /* baseTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseTest.cpp; sourceTree = "<group>"; };
 		DE48D9AF1A5DCE720078FA90 /* baseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseTest.h; sourceTree = "<group>"; };
@@ -149,6 +163,7 @@
 				DEFBC06E1A46842A00468546 /* shape.h */,
 				DEFBC06D1A46842A00468546 /* shape.cpp */,
 				DE118D591A45712E00EADDCD /* circle.h */,
+				DE27DFDD1B40FF5900DB9ED4 /* circle.cpp */,
 			);
 			name = shapes;
 			sourceTree = "<group>";
@@ -176,6 +191,8 @@
 				DE118D541A456DB000EADDCD /* vector.h */,
 				DE6355721A59E79A000769D1 /* particle.h */,
 				DE6355711A59E79A000769D1 /* particle.cpp */,
+				DE27DFE81B4109ED00DB9ED4 /* manifold.cpp */,
+				DE27DFE91B4109ED00DB9ED4 /* manifold.h */,
 			);
 			name = dataStructures;
 			sourceTree = "<group>";
@@ -217,6 +234,12 @@
 		DED8D6121A4BD50F00487E3E /* rigidBodyPhysics */ = {
 			isa = PBXGroup;
 			children = (
+				DE27DFDF1B4102FE00DB9ED4 /* BodyData.cpp */,
+				DE27DFE01B4102FE00DB9ED4 /* BodyData.h */,
+				DE27DFE21B4106CB00DB9ED4 /* sizeData.cpp */,
+				DE27DFE31B4106CB00DB9ED4 /* sizeData.h */,
+				DE27DFE51B4108AD00DB9ED4 /* physicsObject.cpp */,
+				DE27DFE61B4108AD00DB9ED4 /* physicsObject.h */,
 			);
 			name = rigidBodyPhysics;
 			sourceTree = "<group>";
@@ -278,13 +301,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE55DE3D1B37886200FE5A46 /* collisionResolver.cpp in Sources */,
+				DE27DFDE1B40FF5900DB9ED4 /* circle.cpp in Sources */,
 				DEFBC06F1A46842A00468546 /* shape.cpp in Sources */,
 				DE55DE3A1B37883700FE5A46 /* collisionDetector.cpp in Sources */,
 				DE118D471A456C1E00EADDCD /* main.cpp in Sources */,
 				DE118D581A45700700EADDCD /* engine.cpp in Sources */,
 				DE118D521A456D4700EADDCD /* aabb.cpp in Sources */,
 				DE6355791A5A4E04000769D1 /* renderer.cpp in Sources */,
+				DE27DFE71B4108AD00DB9ED4 /* physicsObject.cpp in Sources */,
 				DE118D551A456DB000EADDCD /* vector.cpp in Sources */,
+				DE27DFE11B4102FE00DB9ED4 /* BodyData.cpp in Sources */,
+				DE27DFEA1B4109ED00DB9ED4 /* manifold.cpp in Sources */,
 				DE55DE361B37837200FE5A46 /* timeIO.cpp in Sources */,
 				DE55DE2D1B37774200FE5A46 /* pinMatrixTest.cpp in Sources */,
 				DE55DE451B37A46000FE5A46 /* tetrisTest.cpp in Sources */,
@@ -292,6 +319,7 @@
 				DE6355761A5A4A26000769D1 /* timing.cpp in Sources */,
 				DE48D9B01A5DCE720078FA90 /* baseTest.cpp in Sources */,
 				DE6355731A59E79A000769D1 /* particle.cpp in Sources */,
+				DE27DFE41B4106CB00DB9ED4 /* sizeData.cpp in Sources */,
 				DE55DE321B3782EA00FE5A46 /* projectSettings.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

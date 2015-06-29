@@ -9,15 +9,15 @@
 #include "collisionDetector.h"
 
 bool CollisionDetector::AABBvsAABB(AABB a,AABB b){
-    if(a.max.getX() < b.min.getX() || a.min.getX() > b.min.getX())
+    if(a.getMax()->getX() < b.getMin()->getX() || a.getMin()->getX() > b.getMin()->getX())
         return false;
-    if(a.max.getY() < b.min.getY() || a.min.getY() > b.max.getY())
+    if(a.getMax()->getY() < b.getMin()->getY() || a.getMin()->getY() > b.getMax()->getY())
         return false;
     return true;
 }
 
 bool CollisionDetector::CirclevsCircle(Circle a,Circle b){
     float r = a.radius + b.radius;
-    return (r*r) < a.position.optimizedDistance(b.position);
+    return (r*r) < a.getPosition()->optimizedDistance(b.getPosition());
 }
 

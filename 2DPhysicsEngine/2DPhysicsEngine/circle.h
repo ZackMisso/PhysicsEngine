@@ -11,9 +11,21 @@
 
 #include "vector.h"
 
-struct Circle{
-    Vector2D position;
+class Circle{
+private:
+    Vector2D *position;
     float radius;
+public:
+    ~Circle();
+    Circle();
+    Circle(Vector2D *pos, float r);
+    void update();
+    // getter methods
+    Vector2D* getPosition();
+    float getRadius();
+    // setter methods
+    void setPosition(Vector2D* param);
+    void setRadius(float param);
 };
 
 #endif

@@ -73,24 +73,24 @@ float Vector2D::magnitude(){
     return sqrtf(xpos*xpos + ypos*ypos);
 }
 
-float Vector2D::exactDistance(Vector2D other){
-    float x=xpos-other.getX();
-    float y=ypos-other.getY();
+float Vector2D::exactDistance(Vector2D *other){
+    float x=xpos-other->getX();
+    float y=ypos-other->getY();
     x*=x;
     y*=y;
     return sqrtf(x+y);
 }
 
-float Vector2D::optimizedDistance(Vector2D other){
-    float x=xpos-other.getX();
-    float y=ypos-other.getY();
+float Vector2D::optimizedDistance(Vector2D *other){
+    float x=xpos-other->getX();
+    float y=ypos-other->getY();
     x*=x;
     y*=y;
     return x+y;
 }
 
-float Vector2D::dot(Vector2D other){
-    return xpos*other.getX()+ypos*other.getY();
+float Vector2D::dot(Vector2D *other){
+    return xpos*other->getX()+ypos*other->getY();
 }
 
 float Vector2D::getX(){

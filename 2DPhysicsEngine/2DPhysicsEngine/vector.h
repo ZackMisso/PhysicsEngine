@@ -27,9 +27,9 @@ public:
     void operator *= (float);
     void invertSelf();
     float magnitude();
-    float exactDistance(Vector2D other);
-    float optimizedDistance(Vector2D other);
-    float dot(Vector2D other);
+    float exactDistance(Vector2D *other);
+    float optimizedDistance(Vector2D *other);
+    float dot(Vector2D *other);
     float getX();
     float getY();
     void setX(float x);

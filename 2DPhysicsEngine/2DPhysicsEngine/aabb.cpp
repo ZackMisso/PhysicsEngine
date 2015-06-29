@@ -7,3 +7,30 @@
 //
 
 #include "aabb.h"
+
+AABB::~AABB(){
+    delete min;
+    delete max;
+}
+
+AABB::AABB(){
+    min = nullptr;
+    max = nullptr;
+}
+
+AABB::AABB(Vector2D *x,Vector2D *y){
+    min = x;
+    max = y;
+}
+
+void AABB::update(){
+    // to be implemented
+}
+
+// getter methods
+Vector2D* AABB::getMin(){return min;}
+Vector2D* AABB::getMax(){return max;}
+
+// setter methods
+void AABB::setMin(Vector2D* param){min = param;}
+void AABB::setMax(Vector2D* param){max = param;}
