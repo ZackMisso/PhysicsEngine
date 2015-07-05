@@ -29,6 +29,9 @@
 		DE6355731A59E79A000769D1 /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6355711A59E79A000769D1 /* particle.cpp */; };
 		DE6355761A5A4A26000769D1 /* timing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6355741A5A4A26000769D1 /* timing.cpp */; };
 		DE6355791A5A4E04000769D1 /* renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6355771A5A4E04000769D1 /* renderer.cpp */; };
+		DEDB70AF1B48C3EC0086069A /* array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEDB70AD1B48C3EC0086069A /* array.cpp */; };
+		DEDB70B31B48C6B60086069A /* arrayUnitTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEDB70B11B48C6B60086069A /* arrayUnitTests.cpp */; };
+		DEDB70B71B48D4A40086069A /* testClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEDB70B51B48D4A40086069A /* testClass.cpp */; };
 		DEFBC06F1A46842A00468546 /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEFBC06D1A46842A00468546 /* shape.cpp */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +91,12 @@
 		DE6355771A5A4E04000769D1 /* renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = renderer.cpp; sourceTree = "<group>"; };
 		DE6355781A5A4E04000769D1 /* renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = renderer.h; sourceTree = "<group>"; };
 		DED8D6101A4BD1F800487E3E /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		DEDB70AD1B48C3EC0086069A /* array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array.cpp; sourceTree = "<group>"; };
+		DEDB70AE1B48C3EC0086069A /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		DEDB70B11B48C6B60086069A /* arrayUnitTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arrayUnitTests.cpp; sourceTree = "<group>"; };
+		DEDB70B21B48C6B60086069A /* arrayUnitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayUnitTests.h; sourceTree = "<group>"; };
+		DEDB70B51B48D4A40086069A /* testClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testClass.cpp; sourceTree = "<group>"; };
+		DEDB70B61B48D4A40086069A /* testClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testClass.h; sourceTree = "<group>"; };
 		DEFBC06D1A46842A00468546 /* shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shape.cpp; sourceTree = "<group>"; };
 		DEFBC06E1A46842A00468546 /* shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shape.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,12 +196,15 @@
 		DE55DE2F1B37784000FE5A46 /* dataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				DEDB70B01B48C68F0086069A /* unit tests */,
 				DE118D531A456DB000EADDCD /* vector.cpp */,
 				DE118D541A456DB000EADDCD /* vector.h */,
 				DE6355721A59E79A000769D1 /* particle.h */,
 				DE6355711A59E79A000769D1 /* particle.cpp */,
 				DE27DFE81B4109ED00DB9ED4 /* manifold.cpp */,
 				DE27DFE91B4109ED00DB9ED4 /* manifold.h */,
+				DEDB70AD1B48C3EC0086069A /* array.cpp */,
+				DEDB70AE1B48C3EC0086069A /* array.h */,
 			);
 			name = dataStructures;
 			sourceTree = "<group>";
@@ -242,6 +254,17 @@
 				DE27DFE61B4108AD00DB9ED4 /* physicsObject.h */,
 			);
 			name = rigidBodyPhysics;
+			sourceTree = "<group>";
+		};
+		DEDB70B01B48C68F0086069A /* unit tests */ = {
+			isa = PBXGroup;
+			children = (
+				DEDB70B11B48C6B60086069A /* arrayUnitTests.cpp */,
+				DEDB70B21B48C6B60086069A /* arrayUnitTests.h */,
+				DEDB70B51B48D4A40086069A /* testClass.cpp */,
+				DEDB70B61B48D4A40086069A /* testClass.h */,
+			);
+			name = "unit tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE55DE3D1B37886200FE5A46 /* collisionResolver.cpp in Sources */,
+				DEDB70AF1B48C3EC0086069A /* array.cpp in Sources */,
 				DE27DFDE1B40FF5900DB9ED4 /* circle.cpp in Sources */,
 				DEFBC06F1A46842A00468546 /* shape.cpp in Sources */,
 				DE55DE3A1B37883700FE5A46 /* collisionDetector.cpp in Sources */,
@@ -319,8 +343,10 @@
 				DE6355761A5A4A26000769D1 /* timing.cpp in Sources */,
 				DE48D9B01A5DCE720078FA90 /* baseTest.cpp in Sources */,
 				DE6355731A59E79A000769D1 /* particle.cpp in Sources */,
+				DEDB70B71B48D4A40086069A /* testClass.cpp in Sources */,
 				DE27DFE41B4106CB00DB9ED4 /* sizeData.cpp in Sources */,
 				DE55DE321B3782EA00FE5A46 /* projectSettings.cpp in Sources */,
+				DEDB70B31B48C6B60086069A /* arrayUnitTests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

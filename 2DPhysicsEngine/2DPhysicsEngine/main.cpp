@@ -8,9 +8,12 @@
 
 #include <iostream>
 #include "baseTest.h"
+#include "arrayUnitTests.h"
 
 int main(int argc,char **argv) {
     std::cout << "Hello, World!\n";
-    BaseTest(argc,argv);
+    ArrayUnitTest arrayTest;
+    arrayTest.runUnitTests();
+    //BaseTest(argc,argv);
     return 0;
 }

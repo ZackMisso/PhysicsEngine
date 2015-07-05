@@ -27,5 +27,5 @@ Vector2D* BodyData2D::getVelocity(){return velocity;}
 Vector2D* BodyData2D::getAcceleration(){return acceleration;}
 
 // setter methods
-void setVelocity(Vector2D* param){velocity = param;}
-void setAcceleration(Vector2D* param){acceleration = param;}
+void BodyData2D::setVelocity(Vector2D* param){velocity = param;}
+void BodyData2D::setAcceleration(Vector2D* param){acceleration = param;}

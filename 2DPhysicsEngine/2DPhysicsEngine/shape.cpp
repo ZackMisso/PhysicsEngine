@@ -8,50 +8,24 @@
 
 #include "shape.h"
 
-Shape::Shape(){
-    // implement
+Shape2D::Shape2D(){
+    vertices = new Array<Vector2D*>();
+    bodyData = new BodyData2D();
+    sizeData = new SizeData();
 }
 
-Shape::~Shape(){
-    // implement
+Shape2D::~Shape2D(){
+    delete vertices;
+    delete bodyData;
+    delete sizeData;
 }
 
-Vector2D* Shape::getVelocity(){
-    return velocity;
-}
+// getter methods
+Array<Vector2D*>* Shape2D::getVertices(){return vertices;}
+BodyData2D* Shape2D::getBodyData(){return bodyData;}
+SizeData* Shape2D::getSizeData(){return sizeData;}
 
-Vector2D* Shape::getPosition(){
-    return position;
-}
-
-float Shape::getRestitution(){
-    return restitution;
-}
-
-float Shape::getMass(){
-    return mass;
-}
-
-float Shape::getInverseMass(){
-    return inverseMass;
-}
-
-void Shape::setVelocity(Vector2D* param){
-    velocity=param;
-}
-
-void Shape::setPosition(Vector2D* param){
-    position=param;
-}
-
-void Shape::setRestitution(float param){
-    restitution=param;
-}
-
-void Shape::setMass(float param){
-    mass=param;
-}
-
-void Shape::setInverseMass(float param){
-    inverseMass=param;
-}
+// setter methods
+void Shape2D::setVertices(Array<Vector2D*> *param){vertices = param;}
+void Shape2D::setBodyData(BodyData2D *param){bodyData = param;}
+void Shape2D::setSizeData(SizeData *param){sizeData = param;}

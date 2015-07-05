@@ -11,12 +11,15 @@
 
 #include "circle.h"
 #include "aabb.h"
+#include "manifold.h"
 
 class CollisionDetector{
 private:
 public:
-    bool AABBvsAABB(AABB a,AABB b);
-    bool CirclevsCircle(Circle a,Circle b);
+    Manifold2D* AABBvsAABB(AABB *a,AABB *b);
+    Manifold2D* CirclevsCircle(Circle *a,Circle *b);
+    //int SAT(Shape *one, Shape *two);
+    int SAT(AABB *one, AABB *two);
 };
 
 #endif /* defined(___DPhysicsEngine__collisionDetector__) */

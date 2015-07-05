@@ -8,16 +8,19 @@
 
 #include "collisionDetector.h"
 
-bool CollisionDetector::AABBvsAABB(AABB a,AABB b){
-    if(a.getMax()->getX() < b.getMin()->getX() || a.getMin()->getX() > b.getMin()->getX())
-        return false;
-    if(a.getMax()->getY() < b.getMin()->getY() || a.getMin()->getY() > b.getMax()->getY())
-        return false;
-    return true;
+Manifold2D* CollisionDetector::AABBvsAABB(AABB *a,AABB *b){
+    if(a->getMax()->getX() < b->getMin()->getX() || a->getMin()->getX() > b->getMin()->getX())
+        return nullptr;
+    if(a->getMax()->getY() < b->getMin()->getY() || a->getMin()->getY() > b->getMax()->getY())
+        return nullptr;
+    // to be implemented
+    return nullptr;
 }
 
-bool CollisionDetector::CirclevsCircle(Circle a,Circle b){
-    float r = a.radius + b.radius;
-    return (r*r) < a.getPosition()->optimizedDistance(b.getPosition());
+Manifold2D* CollisionDetector::CirclevsCircle(Circle *a,Circle *b){
+    float r = a->getRadius() + b->getRadius();
+    bool collides = (r*r) < a->getPosition()->optimizedDistance(b->getPosition());
+    // to be implemented
+    return nullptr;
 }
 

@@ -9,15 +9,23 @@
 #include "manifold.h"
 
 Manifold2D::~Manifold2D(){
-    // to be implemented
+    delete one;
+    delete two;
+    delete normal;
 }
 
 Manifold2D::Manifold2D(){
-    // to be implemented
+    one = nullptr;
+    two = nullptr;
+    normal = nullptr;
+    penetration = 0.0f;
 }
 
 Manifold2D::Manifold2D(PhysicsObject2D *a, PhysicsObject2D *b, Vector2D *n, float p){
-    // to be implemented
+    one = a;
+    two = b;
+    normal = n;
+    penetration = p;
 }
 
 // getter methods

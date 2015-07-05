@@ -9,29 +9,27 @@
 #ifndef ___DPhysicsEngine__shape__
 #define ___DPhysicsEngine__shape__
 
-#include <stdio.h>
 #include "vector.h"
+#include "array.h"
+#include "BodyData.h"
+#include "sizeData.h"
 
-class Shape{
+class Shape2D{
 private:
-    Vector2D *velocity;
-    Vector2D *position;
-    float restitution;
-    float mass;
-    float inverseMass;
+    Array<Vector2D*> *vertices;
+    BodyData2D *bodyData;
+    SizeData *sizeData;
 public:
-    Shape();
-    ~Shape();
-    Vector2D* getVelocity();
-    Vector2D* getPosition();
-    float getRestitution();
-    float getMass();
-    float getInverseMass();
-    void setVelocity(Vector2D* param);
-    void setPosition(Vector2D* param);
-    void setRestitution(float param);
-    void setMass(float param);
-    void setInverseMass(float param);
+    Shape2D();
+    ~Shape2D();
+    // getter methods
+    Array<Vector2D*>* getVertices();
+    BodyData2D* getBodyData();
+    SizeData* getSizeData();
+    // setter methods
+    void setVertices(Array<Vector2D*> *param);
+    void setBodyData(BodyData2D* param);
+    void setSizeData(SizeData* param);
 };
 
 #endif /* defined(___DPhysicsEngine__shape__) */
