@@ -14,8 +14,8 @@
 class CollisionResolver{
 private:
 public:
-    void simpleResolveCollision(Shape* a,Shape* b);
-    void positionalCorrection(Shape *a,Shape *b);
+    void simpleResolveCollision(Shape2D* a,Shape2D* b);
+    void positionalCorrection(Shape2D *a,Shape2D *b);
 };
 
 #endif

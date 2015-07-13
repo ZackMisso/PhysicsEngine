@@ -7,3 +7,7 @@
 //
 
 #include "sizeData.h"
+
+SizeData::SizeData(){
+    // to be implemented
+}

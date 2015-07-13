@@ -24,3 +24,10 @@ Manifold2D* CollisionDetector::CirclevsCircle(Circle *a,Circle *b){
     return nullptr;
 }
 
+Vector2D* CollisionDetector::convertTo3Space(Vector3D* vector){
+    return new Vector2D(vector->getX(), vector->getY());
+}
+
+Vector3D* CollisionDetector::convertTo2Space(Vector2D* vector){
+    return new Vector3D(vector->getX(),vector->getY(),1);
+}

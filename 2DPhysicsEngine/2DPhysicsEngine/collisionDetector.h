@@ -20,6 +20,8 @@ public:
     Manifold2D* CirclevsCircle(Circle *a,Circle *b);
     //int SAT(Shape *one, Shape *two);
     int SAT(AABB *one, AABB *two);
+    Vector2D* convertTo3Space(Vector3D* vector);
+    Vector3D* convertTo2Space(Vector2D* vector);
 };
 
 #endif /* defined(___DPhysicsEngine__collisionDetector__) */

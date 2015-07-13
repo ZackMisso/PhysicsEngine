@@ -9,7 +9,7 @@
 #include "collisionResolver.h"
 #include "shape.h"
 
-void CollisionResolver::simpleResolveCollision(Shape* a,Shape* b){
+void CollisionResolver::simpleResolveCollision(Shape2D* a,Shape2D* b){
     /* commenting out to test
      
      Vector2D rv = *b->getVelocity() - *a->getVelocity();
@@ -30,7 +30,7 @@ void CollisionResolver::simpleResolveCollision(Shape* a,Shape* b){
      */
 }
 
-void CollisionResolver::positionalCorrection(Shape *a,Shape *b){
+void CollisionResolver::positionalCorrection(Shape2D *a,Shape2D *b){
     /* commenting out to test
      
      float percent=.2f; // can range from 20% - 80%

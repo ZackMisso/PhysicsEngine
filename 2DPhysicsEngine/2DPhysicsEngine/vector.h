@@ -9,7 +9,7 @@
 #ifndef ___DPhysicsEngine__vector__
 #define ___DPhysicsEngine__vector__
 
-#include <stdio.h>
+#include "vector3.h"
 
 class Vector2D{
 private:
@@ -22,6 +22,10 @@ public:
     Vector2D operator - (Vector2D);
     Vector2D operator * (float);
     Vector2D invertRet();
+    //Vector3D* convertTo3Space();
+    //Vector2D operator + (Vector2D*);
+    //Vector2D operator - (Vector2D*);
+    //Vector2D operator * (float);
     void operator += (Vector2D);
     void operator -= (Vector2D);
     void operator *= (float);
@@ -34,35 +38,6 @@ public:
     float getY();
     void setX(float x);
     void setY(float y);
-};
-
-class Vector3D{
-private:
-    float xpos;
-    float ypos;
-    float zpos;
-public:
-    Vector3D();
-    Vector3D(float x,float y,float z);
-    Vector3D operator + (Vector3D);
-    Vector3D operator - (Vector3D);
-    Vector3D operator * (float);
-    Vector3D invertRet();
-    Vector3D crossProduct(Vector3D other);
-    void operator += (Vector3D);
-    void operator -= (Vector3D);
-    void operator *= (float);
-    void invertSelf();
-    float magnitude();
-    float exactDistance(Vector3D other);
-    float optimizedDistance(Vector3D other);
-    float dot(Vector3D other);
-    float getX();
-    float getY();
-    float getZ();
-    void setX(float x);
-    void setY(float y);
-    void setZ(float z);
 };
 
 #endif /* defined(___DPhysicsEngine__vector__) */

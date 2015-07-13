@@ -9,8 +9,8 @@
 #ifndef ___DPhysicsEngine__shape__
 #define ___DPhysicsEngine__shape__
 
-#include "vector.h"
 #include "array.h"
+#include "vector.h"
 #include "BodyData.h"
 #include "sizeData.h"
 
@@ -19,9 +19,12 @@ private:
     Array<Vector2D*> *vertices;
     BodyData2D *bodyData;
     SizeData *sizeData;
+    Vector3D* convertTo3Space(Vector2D* vector);
+    Vector2D* convertTo2Space(Vector3D* vector);
 public:
     Shape2D();
     ~Shape2D();
+    Array<Vector2D*>* calculateNormals();
     // getter methods
     Array<Vector2D*>* getVertices();
     BodyData2D* getBodyData();
